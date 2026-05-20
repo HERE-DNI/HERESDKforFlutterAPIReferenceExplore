@@ -18,7 +18,7 @@
   <link rel="icon" href="../../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Explore v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="a1a3363f-4b7b-471f-a548-14df12ea61c6"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:54:20+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Explore v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="5b4c6738-e701-465a-9423-9f395bfdc32f"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:19:39+00:00"></head>
 
 
 <body data-base-href="../../" data-using-base-href="false" class="light-theme">
@@ -70,6 +70,7 @@
 <li><span class="parameter" id="-param-fuelStation"><span class="type-annotation"><a href="../../search/FuelStation-class.html">FuelStation</a>?</span> <span class="parameter-name">fuelStation</span> = <span class="default-value">null</span>, </span></li>
 <li><span class="parameter" id="-param-foodTypes"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../search/PlaceFoodType-class.html">PlaceFoodType</a></span>&gt;</wbr></span></span> <span class="parameter-name">foodTypes</span> = <span class="default-value">const []</span>, </span></li>
 <li><span class="parameter" id="-param-payment"><span class="type-annotation"><a href="../../search/POIPaymentDetails-class.html">POIPaymentDetails</a>?</span> <span class="parameter-name">payment</span> = <span class="default-value">null</span>, </span></li>
+<li><span class="parameter" id="-param-evChargingLocation"><span class="type-annotation"><a href="../../search/EVChargingLocation-class.html">EVChargingLocation</a>?</span> <span class="parameter-name">evChargingLocation</span> = <span class="default-value">null</span>, </span></li>
 </ol>])
     </wbr></section>
 
@@ -170,14 +171,19 @@ Not supported in <code>OfflineSearchEngine</code> (only available for the Naviga
 <p><strong>Note:</strong> This is a beta release of this feature, so there could be a few bugs and
 unexpected behaviors.
 Related APIs may change for new releases without a deprecation process.</p>
+<ul>
+<li><code>evChargingLocation</code> Details about the EV charging station, if this place belongs to the EV charging station category.
+<strong>Note:</strong> This is a beta release of this feature, so there could be a few bugs and unexpected behaviors.
+Related APIs may change for new releases without a deprecation process.</li>
+</ul>
 </section>
 
 
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">Details(List&lt;Contact&gt; contacts, List&lt;OpeningHours&gt; openingHours, List&lt;PlaceCategory&gt; categories, List&lt;WebImage&gt; images, List&lt;WebEditorial&gt; editorials, List&lt;WebRating&gt; ratings, List&lt;SupplierReference&gt; references, [EVChargingPool? evChargingPool = null, TruckAmenities? truckAmenities = null, FuelStation? fuelStation = null, List&lt;PlaceFoodType&gt; foodTypes = const [], POIPaymentDetails? payment = null])
-  : contacts = contacts, openingHours = openingHours, categories = categories, images = images, editorials = editorials, ratings = ratings, references = references, evChargingPool = evChargingPool ?? null, truckAmenities = truckAmenities ?? null, fuelStation = fuelStation ?? null, foodTypes = foodTypes, payment = payment ?? null;</code></pre>
+  <pre class="language-dart"><code class="language-dart">Details(List&lt;Contact&gt; contacts, List&lt;OpeningHours&gt; openingHours, List&lt;PlaceCategory&gt; categories, List&lt;WebImage&gt; images, List&lt;WebEditorial&gt; editorials, List&lt;WebRating&gt; ratings, List&lt;SupplierReference&gt; references, [EVChargingPool? evChargingPool = null, TruckAmenities? truckAmenities = null, FuelStation? fuelStation = null, List&lt;PlaceFoodType&gt; foodTypes = const [], POIPaymentDetails? payment = null, EVChargingLocation? evChargingLocation = null])
+  : contacts = contacts, openingHours = openingHours, categories = categories, images = images, editorials = editorials, ratings = ratings, references = references, evChargingPool = evChargingPool ?? null, truckAmenities = truckAmenities ?? null, fuelStation = fuelStation ?? null, foodTypes = foodTypes, payment = payment ?? null, evChargingLocation = evChargingLocation;</code></pre>
 </section>
 
 
@@ -211,7 +217,7 @@ Related APIs may change for new releases without a deprecation process.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.25.5
+      4.26.0
   </span>
 
   
